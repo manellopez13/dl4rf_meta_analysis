@@ -35,7 +35,7 @@ make_forest_plot <- function(df, xlabel, x_low, x_high) {
   es <- escalc(measure="MN", mi=mean, sdi=sd, ni=n, data=df, slab=study)
   res <- rma(yi=yi, vi=vi, data=es)
   
-  n_pos = x_low + 20
+  n_pos = x_low + 0.2 * (x_high - x_low)
   
   n_rows = nrow(df)
   n_rob = sum(df$rob == 1)
@@ -87,7 +87,7 @@ make_forest_plot <- function(df, xlabel, x_low, x_high) {
 
 # DATA DEFINITION - - - - - - - -
 
-data <- read.csv("meta_analysis_data_with_sim_f1.csv")
+data <- read.csv("data/meta_analysis_data_with_sim_f1.csv")
 
 sensitivity <- data[c("study", "n", "sens", "sens_b", "sens_t", "rob")]
 colnames(sensitivity)[3] <- "mean"

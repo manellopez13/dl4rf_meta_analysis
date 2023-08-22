@@ -1,0 +1,6 @@
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# R files
+.RData
+.Rhistory

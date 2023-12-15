@@ -121,5 +121,5 @@ make_forest_plot(precision, "Precision", -10, 130)
 x_low = 25
 x_high = 115
 make_forest_plot(f1, "F1-score", x_low, x_high)
-text(x_high-1.75, 4, pos=4, "*")
-text(x_high-1.75, 18, pos=4, "*")
+text(x_high-2, 4, pos=4, "*")
+text(x_high-2, 18, pos=4, "*")

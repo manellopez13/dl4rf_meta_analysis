@@ -4,3 +4,6 @@
 # R files
 .RData
 .Rhistory
+
+# Output files
+output/
